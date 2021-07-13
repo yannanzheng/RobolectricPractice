@@ -2,6 +2,8 @@ package com.lotusflare.robolectricpractice
 
 import android.widget.Button
 import android.widget.TextView
+import androidx.test.runner.AndroidJUnit4
+import androidx.test.runner.AndroidJUnitRunner
 import org.hamcrest.CoreMatchers.equalTo
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
@@ -10,7 +12,9 @@ import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
 
 
-@RunWith(RobolectricTestRunner::class)
+@RunWith(AndroidJUnit4::class)
+//@RunWith(RobolectricTestRunner::class)
+
 class SandwichTest {
 
     @Test
